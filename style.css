@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --grandient-green: linear-gradient(89deg, #5fe36a 0%, #64fa9b 100%);
+  --brand-color: #60e772;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background-color: #1a191e;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 25px 0;
+  background: var(
+    --grandient-green,
+    linear-gradient(89deg, #5fe36a 0%, #64fa9b 100%)
+  );
+}
+
+.nav-list {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-item {
+  font-family: "Poppins", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 110%;
+  padding: 6px 12px;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: #1a191e;
+  margin-top: 5px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid var(--dark-10, #1a191e);
+  border-radius: 3px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.perfil a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.perfil:hover {
+  background-color: #50c779;
+}
+
+.info {
+  min-height: 900px;
+  padding: 165px 171px;
+  background-image: url(assets/background.jpg);
+}
+
+.info h1 {
+  max-width: 15ch;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 110%; /* 70.4px */
+}
+
+.info p {
+  color: #d7d7d7;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  line-height: 160%; /* 35.2px */
+  max-width: 50ch;
+  margin-top: 75px;
+}
+
+.button {
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 25px;
+  padding: 18px 36px;
+  background: var(
+    --grandient-green,
+    linear-gradient(89deg, #5fe36a 0%, #64fa9b 100%)
+  );
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.vantagens {
+  padding: 165px 171px;
+}
+
+.vantagens h2 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 110%; /* 61.6px */
+  margin-bottom: 75px;
+}
+
+.card-container {
+  display: flex;
+  gap: 115px;
+}
+
+.card {
+  background-color: #000000;
+  padding: 25px 35px;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.card-info h3 {
+  color: #60e772;
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 110%;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.card-content {
+  min-height: 330px;
+}
+
+.personal h3::after {
+  content: "";
+  display: block;
+  width: 38px;
+  top: -5px;
+  height: 38px;
+  left: 305px;
+  background-image: url(assets/halter.svg);
+  position: absolute;
+}
+
+.nutricionista h3::after {
+  content: "";
+  display: block;
+  width: 38px;
+  top: -5px;
+  height: 38px;
+  left: 305px;
+  background-image: url(assets/Leaf.svg);
+  position: absolute;
+}
+
+.suporte h3::after {
+  content: "";
+  display: block;
+  width: 38px;
+  top: -5px;
+  height: 38px;
+  left: 305px;
+  background-image: url(assets/computador.svg);
+  position: absolute;
+}
+
+.card-info span {
+  display: inline-block;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 110%;
+  margin-bottom: 45px;
+}
+
+.card p {
+  color: #a9a9a9;
+  font-family: Roboto;
+  line-height: 21px;
+  position: relative;
+}
+
+.card p::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 13px;
+  background: var(--grandient-green);
+  position: absolute;
+  top: 3px;
+  left: -10px;
+}
+
+.card p + p {
+  margin-top: 30px;
+  max-width: 35ch;
+}
+
+.card a {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 9px 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+}
