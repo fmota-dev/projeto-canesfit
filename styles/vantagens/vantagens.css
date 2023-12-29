@@ -161,3 +161,11 @@
     left: 260px;
   }
 }
+
+@media (max-width: 400px) {
+  .personal h3::after,
+  .nutricionista h3::after,
+  .suporte h3::after {
+    left: 215px;
+  }
+}

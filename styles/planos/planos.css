@@ -1,4 +1,5 @@
 .planos {
+  margin: 0 auto;
   padding: 165px 171px;
   position: relative;
 }
@@ -159,5 +160,34 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 35px;
+  }
+}
+
+@media (max-width: 400px) {
+  .plano-item {
+    min-width: 100%;
+    padding: 50px;
+  }
+
+  .plano-item img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  .plano-item img {
+    max-width: 100px;
+  }
+
+  .plano-titulo {
+    font-size: 18px;
+  }
+
+  .plano-preco {
+    font-size: 14px;
+  }
+
+  .plano-botao {
+    padding: 8px 18px;
+    font-size: 12px;
   }
 }

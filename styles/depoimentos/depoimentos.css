@@ -179,7 +179,15 @@
     top: -20px;
   }
 
-  .seta-direita, .seta-esquerda {
+  .seta-direita,
+  .seta-esquerda {
     display: none;
+  }
+}
+
+@media (max-width: 400px) {
+  .depoimento p::before {
+    width: 245px;
+    top: -13px;
   }
 }
