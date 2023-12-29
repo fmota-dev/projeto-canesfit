@@ -1,0 +1,27 @@
+.info {
+  min-height: 900px;
+  padding: 165px 171px;
+  background-image: url(../assets/background.jpg);
+}
+
+.info h1 {
+  max-width: 15ch;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 110%; /* 70.4px */
+}
+
+.info p {
+  color: #d7d7d7;
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  line-height: 160%; /* 35.2px */
+  max-width: 50ch;
+  margin-top: 75px;
+}
+
+.button:hover {
+  opacity: 0.8;
+}

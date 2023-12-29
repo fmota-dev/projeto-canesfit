@@ -1,0 +1,95 @@
+.depoimentos {
+  padding: 0px 171px;
+}
+
+.depoimentos h2 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 110%; /* 61.6px */
+  margin-bottom: 75px;
+  position: relative;
+}
+
+.depoimentos h2::before {
+  content: "";
+  display: block;
+  width: 1420px;
+  height: 1px;
+  top: -75px;
+  background: #4b4b4b;
+  position: absolute;
+}
+
+.container-depoimentos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+.seta-esquerda {
+  display: block;
+  position: absolute;
+  left: -80px;
+}
+
+.seta-direita {
+  display: block;
+  position: absolute;
+  right: -80px;
+}
+
+.container-depoimentos h2 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 110%; /* 61.6px */
+  margin-bottom: 75px;
+}
+
+.depoimento {
+  padding: 20px 30px;
+  min-height: 300px;
+  max-width: 400px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.feedback-perfil {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.feedback-perfil h3 {
+  color: #000;
+  font-family: Poppins;
+  font-size: 25;
+  font-weight: 600;
+  line-height: 110%; /* 28.103px */
+}
+
+.feedback-perfil h3::after {
+  content: "";
+  display: block;
+  width: 122px;
+  height: 20px;
+  top: 51px;
+  left: 93px;
+  background-image: url(../assets/avaliacao.svg);
+  position: absolute;
+}
+
+.depoimento p {
+  color: #515151;
+  font-family: Roboto;
+  font-size: 17px;
+  line-height: 110%; /* 18.735px */
+  margin-top: 75px;
+  max-width: 35ch;
+}

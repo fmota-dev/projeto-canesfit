@@ -1,0 +1,115 @@
+.vantagens {
+  padding: 165px 171px;
+}
+
+.vantagens h2 {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 110%; /* 61.6px */
+  margin-bottom: 75px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+}
+
+.card {
+  background-color: #000000;
+  padding: 25px 35px;
+  max-width: 400px;
+  border-radius: 5px;
+}
+
+.card-info h3 {
+  color: #60e772;
+  font-family: Poppins;
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 110%;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.personal h3::after {
+  content: "";
+  display: block;
+  width: 38px;
+  top: -5px;
+  height: 38px;
+  left: 305px;
+  background-image: url(../assets/halter.svg);
+  position: absolute;
+}
+
+.nutricionista h3::after {
+  content: "";
+  display: block;
+  width: 38px;
+  top: -5px;
+  height: 38px;
+  left: 305px;
+  background-image: url(../assets/Leaf.svg);
+  position: absolute;
+}
+
+.suporte h3::after {
+  content: "";
+  display: block;
+  width: 38px;
+  top: -5px;
+  height: 38px;
+  left: 305px;
+  background-image: url(../assets/computador.svg);
+  position: absolute;
+}
+
+.card-info span {
+  display: inline-block;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 14px;
+  line-height: 110%;
+  margin-bottom: 45px;
+}
+
+.card-content {
+  min-height: 330px;
+}
+
+.card-content p {
+  color: #a9a9a9;
+  font-family: Roboto;
+  line-height: 21px;
+  position: relative;
+}
+
+.card-content p::before {
+  content: "";
+  display: block;
+  width: 3px;
+  height: 13px;
+  background: var(--grandient-green);
+  position: absolute;
+  top: 3px;
+  left: -10px;
+}
+
+.card p + p {
+  margin-top: 30px;
+  max-width: 35ch;
+}
+
+.card a {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 9px 18px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 600;
+}
