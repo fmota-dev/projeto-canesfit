@@ -41,7 +41,7 @@
   top: -5px;
   height: 38px;
   left: 305px;
-  background-image: url(../assets/halter.svg);
+  background-image: url(../../assets/halter.svg);
   position: absolute;
 }
 
@@ -52,7 +52,7 @@
   top: -5px;
   height: 38px;
   left: 305px;
-  background-image: url(../assets/Leaf.svg);
+  background-image: url(../../assets/Leaf.svg);
   position: absolute;
 }
 
@@ -63,7 +63,7 @@
   top: -5px;
   height: 38px;
   left: 305px;
-  background-image: url(../assets/computador.svg);
+  background-image: url(../../assets/computador.svg);
   position: absolute;
 }
 
