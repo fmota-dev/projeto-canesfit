@@ -178,4 +178,8 @@
     width: 307px;
     top: -20px;
   }
+
+  .seta-direita, .seta-esquerda {
+    display: none;
+  }
 }
