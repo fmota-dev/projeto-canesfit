@@ -263,7 +263,21 @@ body {
 
 .container-depoimentos {
   display: flex;
+  align-items: center;
   gap: 30px;
+  position: relative;
+}
+
+.seta-esquerda {
+  display: block;
+  position: absolute;
+  left: -80px;
+}
+
+.seta-direita {
+  display: block;
+  position: absolute;
+  right: -80px;
 }
 
 .container-depoimentos h2 {
@@ -278,7 +292,7 @@ body {
 .depoimento {
   padding: 20px 30px;
   min-height: 300px;
-  max-width: 410px;
+  max-width: 400px;
   background-color: white;
   border-radius: 5px;
 }
