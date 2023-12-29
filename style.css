@@ -329,6 +329,7 @@ body {
   font-size: 17px;
   line-height: 110%; /* 18.735px */
   margin-top: 75px;
+  max-width: 35ch;
 }
 
 .planos {
