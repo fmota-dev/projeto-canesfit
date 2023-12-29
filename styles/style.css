@@ -1,7 +1,7 @@
-@import url(./global/global.css);
-@import url(./header/header.css);
-@import url(./info/info.css);
-@import url(./vantagens/vantagens.css);
-@import url(./depoimentos/depoimentos.css);
-@import url(./planos/planos.css);
-@import url(./footer/footer.css);
+@import "./global/global.css";
+@import "./header/header.css";
+@import "./info/info.css";
+@import "./vantagens/vantagens.css";
+@import "./depoimentos/depoimentos.css";
+@import "./planos/planos.css";
+@import "./footer/footer.css";
