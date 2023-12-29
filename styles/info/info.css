@@ -25,3 +25,30 @@
 .button:hover {
   opacity: 0.8;
 }
+
+@media (max-width: 450px) {
+  .info {
+    padding: 40px 35px;
+    min-height: 100%;
+    background-image: url(../../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .info h1 {
+    font-size: 42px;
+    font-weight: 700;
+  }
+
+  .info p {
+    font-size: 18px;
+    max-width: 40ch;
+    color: white;
+  }
+
+  .button {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}

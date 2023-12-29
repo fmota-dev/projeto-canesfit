@@ -113,3 +113,51 @@
   font-size: 14px;
   font-weight: 600;
 }
+
+@media (max-width: 1800px) {
+  .card-info h3 {
+    font-size: 22px;
+  }
+
+  .card-info span {
+    font-size: 12px;
+  }
+
+  .card-content p {
+    font-size: 14px;
+  }
+
+  .personal h3::after,
+  .nutricionista h3::after,
+  .suporte h3::after {
+    left: 220px;
+  }
+
+  .card a {
+    margin-top: 35px;
+  }
+}
+
+@media (max-width: 450px) {
+  .vantagens {
+    padding: 40px 35px;
+  }
+
+  .vantagens h2 {
+    font-size: 38px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .personal h3::after,
+  .nutricionista h3::after,
+  .suporte h3::after {
+    left: 260px;
+  }
+}

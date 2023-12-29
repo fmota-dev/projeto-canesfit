@@ -23,8 +23,7 @@
 }
 
 .container-depoimentos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
   align-items: center;
   gap: 30px;
   position: relative;
@@ -52,15 +51,23 @@
 }
 
 .depoimento {
-  padding: 20px 30px;
-  min-height: 300px;
+  padding: 50px 30px;
   max-width: 400px;
+  min-height: 350px;
   background-color: white;
   border-radius: 5px;
+  box-sizing: content-box;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .feedback-perfil {
   display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 12px;
   position: relative;
@@ -69,20 +76,9 @@
 .feedback-perfil h3 {
   color: #000;
   font-family: Poppins;
-  font-size: 25;
+  font-size: 25px;
   font-weight: 600;
   line-height: 110%; /* 28.103px */
-}
-
-.feedback-perfil h3::after {
-  content: "";
-  display: block;
-  width: 122px;
-  height: 20px;
-  top: 51px;
-  left: 93px;
-  background-image: url(../..//assets/avaliacao.svg);
-  position: absolute;
 }
 
 .depoimento p {
@@ -92,4 +88,94 @@
   line-height: 110%; /* 18.735px */
   margin-top: 75px;
   max-width: 35ch;
+  position: relative;
+}
+
+.depoimento p::before {
+  content: "";
+  display: block;
+  width: 300px;
+  height: 1px;
+  top: -40px;
+  background: #e3e3e3;
+  position: absolute;
+}
+
+@media (max-width: 1800px) {
+  .feedback-perfil h3 {
+    font-size: 18px;
+  }
+
+  .feedback-perfil-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .feedback-perfil h3::after {
+    left: 30px;
+    top: 85px;
+  }
+
+  .depoimento p::before {
+    width: 175px;
+    height: 1px;
+    top: -21px;
+  }
+
+  .depoimento {
+    min-height: 350px;
+    padding: 45px 30px;
+  }
+
+  .depoimento p {
+    font-size: 16px;
+    max-width: 45ch;
+  }
+
+  .depoimentos h2::before {
+    content: "";
+    display: block;
+    width: 1098px;
+    height: 1px;
+    top: -75px;
+    background: #4b4b4b;
+    position: absolute;
+  }
+}
+
+@media (max-width: 450px) {
+  .container-depoimentos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .depoimentos h2::before {
+    display: none;
+  }
+
+  .depoimentos {
+    padding: 0px 30px;
+  }
+
+  .depoimentos h2 {
+    font-size: 38px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  .depoimento {
+    padding: 15px 30px;
+    min-height: 100%;
+  }
+
+  .depoimento p {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 30px;
+  }
+
+  .depoimento p::before {
+    width: 307px;
+    top: -20px;
+  }
 }
